@@ -1,0 +1,66 @@
+html {
+  background-color: #222;
+  color: #ccc;
+  font-family: "Helvetica", Arial, sans-serif;
+  line-height: 1.4;
+  font-size: 1.1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.img-detail a{
+  color: #ccc;
+}
+
+.body-text{
+  color: #444;
+}
+
+.body-text a:link {
+}
+
+.body-text a {
+}
+
+.body-text img {
+  display: block;
+  margin: auto;
+  margin-top: 1em;
+}
+
+.body-text .caption{
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+p, li {
+  font-size: 1em;
+}
+
+li {
+  margin-bottom: .4em;
+}
+
+.cta {
+  font-size: 0.6em;
+}
+
+.double-sided {
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
