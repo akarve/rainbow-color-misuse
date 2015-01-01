@@ -120,7 +120,7 @@ var body_surface = new Surface({
   </p>\
   <p>\
     <strong>We can do better</strong>. \
-    This short article explains when and why rainbow color schemes are deceptive and, what the alternatives are.\
+    This article explains when and why rainbow color schemes are deceptive and, what the alternatives are.\
   <p>\
   <h2>Why rainbow color schemes distort data</h2>\
     <p>\
@@ -135,23 +135,28 @@ var body_surface = new Surface({
       <li><strong>Brightness varies unpredictably</strong> across rainbow color scales. \
         Brightness, or luminance, is among the most salient visual features. \
         Luminance is not monotonic across the rainbow color sequence. \
-        The result is a mismatch between the perceptual features of the rainbow and the underlying numerical data.\
+        The result is a mismatch between the perceptual features of the rainbow scheme and the underlying numerical data.\
       </li>\
     </ul>\
-    <p>\
-      The\
-    </p>\
     <p>\
       <strong>Example:</strong> Consider the graphic above. \
       NASA Goddard produced the graphic to depict CO2 concentration around the globe. \
       That is to say, this data is vital to the survival of humanity. \
       Now, based on the graphic, where are the highest concentrations of CO2? \
-      Viewers frequently say &ldquo;in the red.&rdquo; Red indeed looks right, but its quite wrong. \
+      Viewers frequently say &ldquo;in the red.&rdquo; Red indeed looks right, but it's quite wrong. \
     </p>\
     <p>\
       As the legend below indicates, the faint violet and pink areas actually indicate the highest CO2 concentration.\
       <img name='scale' width='280' src='./img/color-scale.jpg' style='opacity:0.05;' onclick='event.target.style.opacity=1'>\
       <small class='caption'>Tap to show legend</small>\
+    </p>\
+    <p>\
+      The following articles cover the perceptual weaknesses of rainbow color schemes in greater detail: \
+      <a href='https://eagereyes.org/basics/rainbow-color-map'>How the Rainbow Color Map Misleads</a>, \
+      <a href='http://www.poynter.org/uncategorized/224413/why-rainbow-colors-arent-always-the-best-options-for-data-visualizations/'>Why rainbow colors aren’t the best option for data visualizations</a>, \
+      and <a href='http://www.climate-lab-book.ac.uk/2014/end-of-the-rainbow/'>The End of the Rainbow.</a> \
+      For a deeper treatment, see Colin Ware's books, <a href='http://www.amazon.com/Visual-Thinking-Kaufmann-Interactive-Technologies/dp/0123708966'>Visual Thinking for Design</a> \
+      and <a href='http://www.amazon.com/Information-Visualization-Second-Interactive-Technologies/dp/1558608192/'>Information Visualization, Second Edition: Perception for Design</a>. \
     </p>\
     <ul>\
       <li><a href='#why'>Why rainbow schemes distort</a></li>\
