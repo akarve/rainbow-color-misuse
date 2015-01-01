@@ -120,7 +120,7 @@ var body_surface = new Surface({
   </p>\
   <p>\
     <strong>We can do better</strong>. \
-    This article explains when and why rainbow color schemes are deceptive and, what the alternatives are.\
+    This brief article explains when and why rainbow color schemes are deceptive and what the alternatives are.\
   <p>\
   <h2>Why rainbow color schemes distort data</h2>\
     <p>\
@@ -153,17 +153,52 @@ var body_surface = new Surface({
       <img name='scale' width='50%' src='./img/color-scale.jpg' style='opacity:0.05;' onclick='event.target.style.opacity=1'>\
       <small class='caption'>Tap to show legend</small>\
     </p>\
-    <p>\
-    </p>\
+  <h2>Use these color schemes instead</h2>\
+  <p>\
+    Color schemes based on <a href= 'http://en.wikipedia.org/wiki/Opponent_process'>opponent color scales</a>, ligthness (fixed hue), saturation (fixed hue), or grayscale are perceptual and more faithfully represent continuous numerical data. \
+    Color space matters, too. The <a href='http://bl.ocks.org/mbostock/3014589'>Lab and HCL Color Spaces</a> are more perceptually uniform than RGB. \
+  </p>\
+  <h3>Opponent colors</h3>\
+  <p>\
+    <img name='scale' width='50%' src='./img/red-green.png'>\
+    <small class='caption'>Red-green color sequence</small>\
+  <p>\
+  <p>\
+    <img name='scale' width='50%' src='./img/blue-yellow.png'>\
+    <small class='caption'>Blue-yellow color sequence (superior to red-green since its luminance increases montonically)</small>\
+  <p>\
+  <h3>Saturation</h3>\
+  <p>\
+    <img name='scale' width='50%' src='./img/red-lightness.png'>\
+    <small class='caption'>Saturation encoding (red to white)</small>\
+  <p>\
+  <h3>Lightness</h3>\
+  <p>\
+    <img name='scale' width='50%' src='./img/red-darkness.png'>\
+    <small class='caption'>Lightness encoding (red to black)</small>\
+  <p>\
+  <h3>Grayscale</h3>\
+  <p>\
+    <img name='scale' width='50%' src='./img/luminance.png'>\
+  <p>\
+  </p>\
+  <h2>Save the world from bad data</h2>\
+  <ul>\
+    <li>Do new visualizations right</li>\
+    <li>Help others by tweeting to <a href='https://twitter.com/share?url=http://rainbow.colormisuse.org&hashtags=endrainbow&via=colormisuse&text=Rainbow%20color%20schemes%20considered%20harmful%20in%20data%20visualization'>@colormisuse #endrainbow</a></li>\
+    <li>Follow <a href='https://twitter.com/colormisuse'>@colormisuse</a></li>\
+  </ul>\
+  </p>\
   <h2>References</h2>\
   <ul>\
     <li><a href='https://eagereyes.org/basics/rainbow-color-map'>How the Rainbow Color Map Misleads</a> by Robert Kosara</li>\
     <li><a href='http://www.climate-lab-book.ac.uk/2014/end-of-the-rainbow/'>The End of the Rainbow</a> by Ed Hawkins</li>\
     <li><a href='http://www.poynter.org/uncategorized/224413/why-rainbow-colors-arent-always-the-best-options-for-data-visualizations/'>Why rainbow colors aren’t the best option for data visualizations</a> by Anna Li</li>\
     <li><a href='http://bl.ocks.org/mbostock/3014589'>Lab and HCL Color Spaces</a> by Mike Bostock</a></li>\
+    <li><a href='http://www.amazon.com/Visual-Thinking-Kaufmann-Interactive-Technologies/dp/0123708966'>Visual Thinking for Design</a> by Colin Ware</li>\
     <li><a href='http://www.amazon.com/Information-Visualization-Second-Interactive-Technologies/dp/1558608192/'>Information Visualization, Second Edition: Perception for Design</a> by Colin Ware</li>\
   </ul>\
-  <img src='./img/badrainbow.png'>\
+  <a href='http://rainbow.colormisuse.org'><img src='./img/badrainbow.png'></a>\
   ",
   properties: {
       backgroundColor: content.bg,
