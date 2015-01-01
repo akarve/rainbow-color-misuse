@@ -1,6 +1,6 @@
 # Origin
 A long-time pet peeve of the vis community's: rainbow color schemes: https://twitter.com/_Noeska_/status/532438699062329344
-Following that conversation I registered rainbow.colormisuse.org and https://twitter.com/colormisuse
+Following that conversation I registered http://rainbow.colormisuse.org and https://twitter.com/colormisuse
 
 # Contributors
 Are welcome. Email aneesh at visualmagnetic.com.
