@@ -162,7 +162,7 @@ var body_surface = new Surface({
     <li><a href='http://bl.ocks.org/mbostock/3014589'>Lab and HCL Color Spaces</a> by Mike Bostock</a></li>\
     <li><a href='http://www.amazon.com/Information-Visualization-Second-Interactive-Technologies/dp/1558608192/'>Information Visualization, Second Edition: Perception for Design</a> by Colin Ware</li>\
   </ul>\
-  <img src='../img/badrainbow.png'>\
+  <img src='./img/badrainbow.png'>\
   ",
   properties: {
       backgroundColor: content.bg,
