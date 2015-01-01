@@ -139,7 +139,7 @@ var body_surface = new Surface({
       </li>\
     </ul>\
     <p>\
-      See References below for a detailed treatment of the rainbow color scheme's perceptual shortcomings.\
+      See the References section for details of the rainbow color scheme's perceptual shortcomings.\
     </p>\
     <p>\
       <strong>Example:</strong> Consider the colored map at page top. \
