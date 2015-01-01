@@ -21,7 +21,7 @@ var content = {'bg':'#eee', 'color':'#555'};
 var rbow_img = {'width':800, 'height':399};
 //GO
 var layout = new HeaderFooterLayout({
-  footerSize: 65
+  headerSize: 0
 });
 //CONTENT BODY
 var scrollview = new Scrollview();
@@ -109,7 +109,7 @@ layout.content.add(uright_mod).add(github);
 surfaces.push(rainbow_cont);
 
 var body_surface = new Surface({
-  size: [undefined, true],
+  size: [undefined, null],
   content:
   "\
   <p>\
@@ -212,12 +212,12 @@ var center_bot_mod = new StateModifier({
     origin: [0.5, 1]
 });
 
-var footer_elts = [cta, actions];
+var footer_elts = [cta];
 var footer_seq = []
 for(var i = 0; i < footer_elts.length; i++){
   var height = Math.round(1.2*footer_elts[i].getSize()[1]);
   var cs = new ContainerSurface({
-    size: [150, height],
+    size: [180, height],
     properties: {
     }
   });
@@ -237,7 +237,7 @@ footer_col.sequenceFrom(footer_seq);
 var footer_row = new SequentialLayout({direction:0});
 var row = [];
 row.push(new ImageSurface({
-  size: [64, 52],
+  size: [32, 26],
   content: './img/twitter.png',
   properties: {
     marginTop: "8px",

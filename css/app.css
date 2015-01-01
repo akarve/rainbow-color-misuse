@@ -24,6 +24,12 @@ a {
 .body-text a {
 }
 
+
+.button-group li {
+  width: 65px;
+}
+
+
 .body-text img {
   display: block;
   margin: auto;
