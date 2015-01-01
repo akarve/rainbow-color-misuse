@@ -116,7 +116,7 @@ var body_surface = new Surface({
     The rainbow color scheme is widely misused in visualizations for health, public policy, and popular science. \
     <strong>Rainbow color schemes distort data</strong>. \
     Distorted data leads to incorrect judgments on key issues, like climate change. \
-    Improper use use of rainbow color schemes is therefore <strong>poor journalism</strong>.\
+    Improper use of rainbow color schemes is therefore <strong>poor journalism</strong>.\
   </p>\
   <p>\
     <strong>We can do better</strong>. \
@@ -131,15 +131,22 @@ var body_surface = new Surface({
         A perceptual color sequence works <em>a priori</em>; it requires no learning. \
         In contrast, the rainbow color sequence is learned.\
       </li>\
-      <li>They're <strong>inaccessible to color-blind users</strong></li>\
-      <li><strong>Brightness varies unpredictably</strong> across rainbow color scales</li>\
+      <li>They're <strong>inaccessible to color-blind users.</strong></li>\
+      <li><strong>Brightness varies unpredictably</strong> across rainbow color scales. \
+        Brightness, or luminance, is among the most salient visual features. \
+        Luminance is not monotonic across the rainbow color sequence. \
+        The result is a mismatch between the perceptual features of the rainbow and the underlying numerical data.\
+      </li>\
     </ul>\
+    <p>\
+      The\
+    </p>\
     <p>\
       <strong>Example:</strong> Consider the graphic above. \
       NASA Goddard produced the graphic to depict CO2 concentration around the globe. \
       That is to say, this data is vital to the survival of humanity. \
       Now, based on the graphic, where are the highest concentrations of CO2? \
-      Viewers frequently say &ldquo;in the red.&rdquo; Red indeed looks right, but it\'s quite wrong. \
+      Viewers frequently say &ldquo;in the red.&rdquo; Red indeed looks right, but its quite wrong. \
     </p>\
     <p>\
       As the legend below indicates, the faint violet and pink areas actually indicate the highest CO2 concentration.\
