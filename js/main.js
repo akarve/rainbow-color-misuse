@@ -139,33 +139,23 @@ var body_surface = new Surface({
       </li>\
     </ul>\
     <p>\
-      <strong>Example:</strong> Consider the graphic above. \
+      See References below for a detailed treatment of the rainbow color scheme's perceptual shortcomings.\
+    </p>\
+    <p>\
+      <strong>Example:</strong> Consider the colored map at page top. \
       NASA Goddard produced the graphic to depict CO2 concentration around the globe. \
       That is to say, this data is vital to the survival of humanity. \
       Now, based on the graphic, where are the highest concentrations of CO2? \
       Viewers frequently say &ldquo;in the red.&rdquo; Red indeed looks right, but it's quite wrong. \
     </p>\
     <p>\
-      As the legend below indicates, the faint violet and pink areas actually indicate the highest CO2 concentration.\
-      <img name='scale' width='280' src='./img/color-scale.jpg' style='opacity:0.05;' onclick='event.target.style.opacity=1'>\
+      As the legend below indicates, the faint violet areas actually indicate the highest CO2 concentration.\
+      <img name='scale' width='50%' src='./img/color-scale.jpg' style='opacity:0.05;' onclick='event.target.style.opacity=1'>\
       <small class='caption'>Tap to show legend</small>\
     </p>\
     <p>\
-      The following articles cover the perceptual weaknesses of rainbow color schemes in greater detail: \
-      <a href='https://eagereyes.org/basics/rainbow-color-map'>How the Rainbow Color Map Misleads</a>, \
-      <a href='http://www.poynter.org/uncategorized/224413/why-rainbow-colors-arent-always-the-best-options-for-data-visualizations/'>Why rainbow colors aren’t the best option for data visualizations</a>, \
-      and <a href='http://www.climate-lab-book.ac.uk/2014/end-of-the-rainbow/'>The End of the Rainbow.</a> \
-      For a deeper treatment, see Colin Ware's books, <a href='http://www.amazon.com/Visual-Thinking-Kaufmann-Interactive-Technologies/dp/0123708966'>Visual Thinking for Design</a> \
-      and <a href='http://www.amazon.com/Information-Visualization-Second-Interactive-Technologies/dp/1558608192/'>Information Visualization, Second Edition: Perception for Design</a>. \
     </p>\
-    <ul>\
-      <li><a href='#why'>Why rainbow schemes distort</a></li>\
-      <li>What to use instead of a rainbow scheme</li>\
-      <li>When rainbow schemes are OK</li>\
-      <li>Recent offenders</li>\
-    </ul>\
-  <p>Check out the image above.<p>\
-  <h2>Learn more</h2>\
+  <h2>References</h2>\
   <ul>\
     <li><a href='https://eagereyes.org/basics/rainbow-color-map'>How the Rainbow Color Map Misleads</a> by Robert Kosara</li>\
     <li><a href='http://www.climate-lab-book.ac.uk/2014/end-of-the-rainbow/'>The End of the Rainbow</a> by Ed Hawkins</li>\
