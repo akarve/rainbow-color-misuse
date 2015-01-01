@@ -109,7 +109,7 @@ layout.content.add(uright_mod).add(github);
 surfaces.push(rainbow_cont);
 
 var body_surface = new Surface({
-  size: [undefined, null],
+  size: [undefined, true],
   content:
   "\
   <p>\
@@ -124,17 +124,16 @@ var body_surface = new Surface({
   <p>\
   <h2>Why rainbow color schemes distort data</h2>\
     <p>\
-      Rainbow color schemes obscure continuous numerical data (e.g. CO2 data above) for the following reasons:\
+      Rainbow color schemes obscure continuous numerical data for the following reasons:\
     </p>\
     <ul>\
-      <li>They're <strong>not perceptual</strong></li>\
+      <li>They're <strong>not perceptual</strong>.\
+        A perceptual color sequence works <em>a priori</em>; it requires no learning. \
+        In contrast, the rainbow color sequence is learned.\
+      </li>\
       <li>They're <strong>inaccessible to color-blind users</strong></li>\
       <li><strong>Brightness varies unpredictably</strong> across rainbow color scales</li>\
     </ul>\
-    <dl>\
-      <dt>bob</dt>\
-      <dd>project manager at matterport</dd>\
-    </dl>\
     <p>\
       <strong>Example:</strong> Consider the graphic above. \
       NASA Goddard produced the graphic to depict CO2 concentration around the globe. \
@@ -188,67 +187,42 @@ layout.header.add(new Surface({
     }
 }));
 
-//FOOTER
-var cta = new Surface({
-  size: [145, 18],
-  content: "<em>Save the world from bad data</em>",
-});
-cta.addClass("cta");
-
-
 var actions = new Surface({
-  size: [132, 36],
+  size: [135, 34],
   content: "\
     <ul class='button-group'>\
-      <li><a href='https://twitter.com/share?url=http://rainbow.colormisuse.org&hashtags=endrainbow&via=colormisuse&text=Rainbow%20color%20schemes%20considered%20harmful%20in%20data%20visualization' class='button primary big pill'>tweet</a></li>\
+      <li><a href='https://twitter.com/share?url=http://rainbow.colormisuse.org&hashtags=endrainbow&via=colormisuse&text=Rainbow%20color%20schemes%20considered%20harmful%20in%20data%20visualization' class='button primary big pill'>share</a></li>\
       <li><a href='https://twitter.com/colormisuse' class='button big pill'>follow</a></li>\
     </ul>",
   properties: {
   }
 });
 
-var center_bot_mod = new StateModifier({
-    align: [0.5, 1],
-    origin: [0.5, 1]
+var bird = new ImageSurface({
+  size: [32, 26],
+  content: './img/twitter.png',
 });
 
-var footer_elts = [cta];
+
+var footer_elts = [bird, actions];
 var footer_seq = []
 for(var i = 0; i < footer_elts.length; i++){
-  var height = Math.round(1.2*footer_elts[i].getSize()[1]);
+  var size = footer_elts[i].getSize();
+  var width = i === 0 ? size[0] : Math.round(1.1*size[0]);
   var cs = new ContainerSurface({
-    size: [180, height],
+    size: [width, 42],
     properties: {
     }
   });
-  if(i === 0){
-    cs.add(center_bot_mod).add(footer_elts[i]);
-  }else{
-    cs.add(center_mod).add(footer_elts[i]);
-  }
+  cs.add(center_mod).add(footer_elts[i]);
   footer_seq.push(cs);
-  //footer_seq.push(footer_elts[i]);
 }
 
-var footer_col = new SequentialLayout({
-});
-footer_col.sequenceFrom(footer_seq);
-
 var footer_row = new SequentialLayout({direction:0});
-var row = [];
-row.push(new ImageSurface({
-  size: [32, 26],
-  content: './img/twitter.png',
-  properties: {
-    marginTop: "8px",
-    paddingRight: "5px"
-  }
-}));
-row.push(footer_col);
-footer_row.sequenceFrom(row);
+footer_row.sequenceFrom(footer_seq);
 
 var footer_complete = new ContainerSurface({
-  size: [undefined, 65],
+  size: [undefined, 44],
   properties: {
     backgroundColor: 'rgba(0, 16, 32, 0.8)'
   }
