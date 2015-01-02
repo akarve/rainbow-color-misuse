@@ -182,6 +182,11 @@ var body_surface = new Surface({
     <img name='scale' width='50%' src='./img/luminance.png'>\
   <p>\
   </p>\
+  <h2>When rainbow colors are OK</h2>\
+  <p>\
+    Sometimes colors are used as names, to represent distinct categories. \
+    In these cases, known as <em>nominal encodings</em>, a rainbow color scheme is OK. \
+  </p>\
   <h2>Save the world from bad data</h2>\
   <ul>\
     <li>Do new visualizations right</li>\
